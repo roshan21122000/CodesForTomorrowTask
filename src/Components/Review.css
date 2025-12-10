@@ -1,0 +1,111 @@
+.review-page {
+ margin-top: 80px;   
+  padding: 20px;
+  text-align: left;
+}
+
+.add-review {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.review-input,
+.reply-input,
+.edit-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add {
+  background: #1976d2;
+  color: white;
+}
+
+.reply {
+  background: #0288d1;
+  color: white;
+}
+
+.edit {
+  background: #fbc02d;
+  color: white;
+}
+
+.delete {
+  background: #d32f2f;
+  color: white;
+}
+
+.save {
+  background: #388e3c;
+  color: white;
+}
+
+.cancel {
+  background: grey;
+  color: white;
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-item {
+  background: #f5f7fb;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 8px;
+}
+
+.reply-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nested-replies {
+  margin-left: 25px;
+  margin-top: 10px;
+  border-left: 2px dashed #ccc;
+  padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .add-review,
+  .reply-box,
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .nested-replies {
+    margin-left: 15px;
+  }
+}

@@ -1,67 +1,101 @@
-.customer-page {
+.customer-container {
   display: flex;
   gap: 20px;
- 
-   margin-top: 80px;   
   padding: 20px;
-  text-align: left;
+  margin-top: 80px;
 }
 
-.customer-list-section {
-  width: 40%;
+.left-panel {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.panel-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #304ffe;
+  font-weight: 700;
 }
 
 .customer-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-.customer-card {
+.customer-item {
   padding: 15px;
-  background: #6cc7e2;
+  border: 2px solid #a4c921;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease;
+  background: rgb(195, 221, 212);
 }
 
-.customer-card:hover {
-  background: #f4f4f4;
+.customer-item:hover {
+  border-color: #292929;
 }
 
-.customer-card.active {
-  border: 2px solid #1976d2;
+.customer-item.active {
+  border-color: #1c2d8d;
+  background: #999ed4;
 }
 
-
-.customer-details-section {
-  width: 60%;
+.right-panel {
+  flex: 1;
+  background: #f4f6ff;
   padding: 20px;
-  background: #8793b3;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.customer-details p {
-  font-size: 16px;
-  margin: 10px 0;
+.profile-section {
+  background: #ffdfb0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #da2b0c;
+}
+
+.profile-section h3 {
+  margin-bottom: 8px;
+  color: #3b3b3b;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .no-selection {
-  color: #777;
-  font-size: 16px;
-  margin-top: 50px;
   text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  color: whitesmoke;
 }
 
-@media (max-width: 900px) {
-  .customer-page {
-    flex-direction: column;    
-  }
+.personal-details-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .customer-list-section,
-  .customer-details-section {
-    width: 100%;              
-  }
+.personal-left {
+  width: 70%;
+}
+
+.personal-right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-right img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #304ffe;
+  object-fit: cover;
+  background: white;
 }

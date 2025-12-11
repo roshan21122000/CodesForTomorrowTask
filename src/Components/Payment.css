@@ -1,0 +1,48 @@
+.transaction-page{
+     margin-top: 80px;   
+  padding: 20px;
+  text-align: left;
+ 
+}
+
+.transaction-page h2{
+   color: rgb(55, 41, 116);
+}
+.transaction-page thead{
+  text-align: left;
+}
+.btn {
+  display: flex;      
+  gap: 12px;             
+  margin: 20px 0;
+}
+
+.btn button {
+  padding: 8px 16px;
+  border: none;
+  background: #835aaa;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.btn button:hover {
+  background: #2a1da1;
+}
+
+.transaction-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.transaction-table th {
+  background: #b8b8bb;
+  color: #3f3d3d;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+}
+.transaction-table tr{
+  text-align: center;
+}

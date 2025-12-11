@@ -132,7 +132,7 @@ const SignupLogin: React.FC = () => {
 
         {isSignUp && (
           <form onSubmit={handleSubmit(onSignUp)}>
-            <h1>Signup</h1>
+            <h5>Signup</h5>
 
             <div className="input-box">
 
@@ -228,7 +228,7 @@ const SignupLogin: React.FC = () => {
 
         {!isSignUp && (
           <form onSubmit={handleLoginSubmit(onLogin)}>
-            <h1>Login</h1>
+            <h5>Login</h5>
 
             <div className="input-box">
 
